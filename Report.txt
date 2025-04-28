@@ -1,44 +1,60 @@
-Name:
+Name: Ella Falk
 
-Number of elements:
+Number of elements: 10,000
 
 Bubble Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 4.01 seconds
+Reversed: 8.54 seconds
+Random: 7.21 seconds
 
 Bubble Sort Early Exit
-Sorted:
-Reversed:
-Random:
+Sorted: 0.0005 seconds
+Reversed: 5.75 seconds
+Random: 4.60 seconds
 
 Selection Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 1.87 seconds
+Reversed: 2.10 seconds
+Random: 1.89 seconds
 
 Insertion Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.003 seconds
+Reversed: 11.05 seconds
+Random: 5.51 seconds
 
 Merge Sort
-Sorted:
-Reversed:
-Random:
+Sorted: 0.016 seconds
+Reversed: 0.020 seconds
+Random: 0.020 seconds
 
 Questions to answer:
 1) What was the worst case scenario for any sorting technique?
-
+The worst case scenario for the bubble sort in reversed order. It had a runtime of 8.54 seconds because it has to run through each value.
+This method would be least efficient because it has the most amount of runtime.
 
 2) The first 3 sorts have the same runtime of O(n^2). Why were the times different? Why would one be more efficient than the others?
+The times are different because if in insertion sort, the list is somewhat sorted already, then it will run faster because it has less steps to complete.
+Selection sort takes less time than bubble sort because it doesn't have to change spots as much.
+Bubble sort goes through and checks each value.
+So eventhough they all have the same runtime, insertion and selection sort have methods to skip checking every value to cut down runtime.
+
+
 
 
 3) Why was merge sort so much more efficient?
+Merge sort is so much more efficient because it uses recursion. Recursion is where the program calls on itself. It splits the list in half, and then 
+it merges it back together to one list. The recursive part means the halves are spilt many times to find the correct value.
+These splits are happening almost simultaniously, but it allows the program to look for the values while having the other splits going at the same time.
 
 
 4) The built-in sorting technique for most programming languages is known as TimSort.
 This is a merge sort until the arrays have fewer than 10 elements, then it does an insertion sort. Why would this be useful?
+Merge sort is by far the fastes and most efficient technique, but it takes a lot from the sytem to run the splits so fast. Once the list gets to about 10 items,
+insertions sort is reliable and almost as fast as merge sort. This will help the computer or programs being able to handle the other splits and not create unneccesary 
+work for the program of having very smll splits stack on each other.
 
 
 5) What issues can you see with a recursive sorting technique like merge sort?
+Recursive sorting stacks processes on top of each other. While this gets it the short runtime, tt can be a lot for the program or codespace to handle.
+When there are more and more values to sort with merge sort, more things/splits will run on top of each other. This could crash the system or the merge sort might not work.
+While it is very fast, there are a lot of things happening at onne, so you need to be awar on how to not overload your system.
